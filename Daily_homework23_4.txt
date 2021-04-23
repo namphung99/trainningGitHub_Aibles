@@ -9,8 +9,8 @@ Giống:
 
 Khác:
     + git switch: có mức độ phổ biến thấp,thường chỉ dùng để chuyển nhánh  ( git switch <branch name> ), 
-    ta có thể tạo nhánh mới với git switch bằng cách ( git switch -c <branch name> 
+    ta có thể tạo nhánh mới và chuyển luôn sang nhánh đó với git switch bằng cách ( git switch -c <new branch> 
 
 
     + git checkout: có mức độ sử dụng phổ biến hơn, ngoài việc sử dụng để chuyển nhánh ( git checkout <branch name> ) ,
-    còn có thể dùng để tạo nhánh mới ( git checkout -b <new branch>)
+    còn có thể dùng để tạo nhánh mới và chuyển luôn sang nhánh đó ( git checkout -b <new branch>)

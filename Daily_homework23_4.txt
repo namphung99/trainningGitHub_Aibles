@@ -1,0 +1,16 @@
+Daily_homework23-4
+
+Câu hỏi: Phân biệt sự giống và khác nhau giữa 'git checkout' và git 'switch'
+
+Giống: 
+    + git checkout và git switch đều dùng để chuyển nhánh,  và tạo nhánh mới, 
+    có thể dùng git checkout hoặc git switch + --help để xem các thao tác có 
+    thể sử dụng với git checkout hoặc git switch
+
+Khác:
+    + git switch: có mức độ phổ biến thấp,thường chỉ dùng để chuyển nhánh  ( git switch <branch name> ), 
+    ta có thể tạo nhánh mới với git switch bằng cách ( git switch -c <branch name> 
+
+
+    + git checkout: có mức độ sử dụng phổ biến hơn, ngoài việc sử dụng để chuyển nhánh ( git checkout <branch name> ) ,
+    còn có thể dùng để tạo nhánh mới ( git checkout -b <new branch>)

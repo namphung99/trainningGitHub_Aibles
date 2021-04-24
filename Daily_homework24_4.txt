@@ -5,4 +5,4 @@ Khi merge branchB vào branchA thì lịch sử commit của branchA là gì.
 
 Trả lời:
 
-Khi đó lịch sử commit của branch A là  Commit1 - Commit2 (của branchA) -  Commit1 - Commit2 - Commit3 - Commit4 (của branchB đã được merge)
+Khi đó lịch sử commit của branch A là Commit1 - Commit2 - Commit3 - Commit4 

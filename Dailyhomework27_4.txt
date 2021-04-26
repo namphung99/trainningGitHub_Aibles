@@ -1,0 +1,13 @@
+2.1: Khi merge cần có commit, vậy commit merge này có được log trên nhánh được merge vào không (nhánh đích: branch A)?
+Trả lời: khi merge cần có commit trên nhánh đích git merge <branch name> -m "description" commit này sẽ có tại lịch sử commit
+của nhánh đích
+
+2.2: Khi checkout branch B từ branch A, khi mà branch A có commit 1, sau đó 1 thơi gian branch A có 2 commit (commit 1 - commit 2), 
+branch B có 3 commit (commit 1 - commit 3 - commit 4), thế nếu merge B vào A xong. Git log ở A, 
+thứ tự xuất hiện các commit có phụ thuộc vào thời gian commit của commit 2, 3, 4 không?
+
+Trả lời: nếu ta merge branchB vào branchA thì lịch sử commit sẽ phụ thuộc vào thời gian  xuất hiện của các commit 
+ví dụ checkout branchB tại branchA tại thời điểm commit1, sau đó trở lại branchA thực hiện commit2, rồi mới checkout sang
+branchB thực hiện commit 3 4 (lịch sử commit lúc này tại branchA là 1 2, branchB là 3 4 nhưng thời gian xuất hiện khác nhau)
+khi merge branchB vào branchA bằng lệnh git merge branchB -m "merge branchB" thì lịch sử commit là
+1 - 2 - 3 - 4 - merge branchB

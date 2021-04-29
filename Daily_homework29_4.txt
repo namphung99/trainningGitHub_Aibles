@@ -1,0 +1,38 @@
+Bài tập dailyhomework 29/4 (hạn 22h)
+Viết một bài tìm hiểu về 3 tùy chọn merge : "create a merge commit", "Squash and merge", "Rebase and merge" 
+khi thực hiện merge pull request trên github.
+
+Trả lời: 
+- Create a Merge Commit:
+là 1 lựa chọn mặc định của Merge pull request, sẽ lấy tất cả cả các commit của branch vào nhánh được merge, lịch sử commit ứcủa nhánh chức năng
+lúc này sẽ được gộp vào nhánh chính
+
+- "Squash and merge", "Rebase and merge":
+Cả git merge --squash và git rebase --interactive đều có thể tạo ra một cam kết "bị bẹp".
+Nhưng chúng phục vụ các mục đích khác nhau.
+
+git checkout stable
+      X                   stable
+     /                   
+a---b---c---d---e---f---g tmp
+
+git merge --squash tmp
+git commit -m "squash tmp"
+      X-------------------G stable
+     /                   
+a---b---c---d---e---f---g tmp
+
+G được c--d--e--f--g gép lại với nhau, squash: giữ lại các thay đổi nhưng bỏ qua các commit riêng lẻ
+git squash kết hợp các commit tại nhánh chức năng thành 1 commit
+
+
++ rebase nó sẽ đưa toàn bộ feature branch lên trên cùng của master.
+
+feature           c---f---g       
+                /                   
+master a---b---c---d---e
+
+master a---b---c---d---e---f---g  
+
+Lợi ích của dùng rebase là chúng ta có history của project sạch sẽ hơn. Sẽ không có những merge commit dư thừa như trong lệnh merge
+Nhưng theo 1 số tài liệu thì nên hạn chế dùng rebase??? 

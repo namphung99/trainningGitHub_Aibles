@@ -1,0 +1,43 @@
+
+Viết một bài tóm tắt về OOP theo 5W1H. 
+
+*
+- WHAT: OOP là gì?
++ Lập trình hướng đối tượng (Object Oriented Programming – OOP) là một trong những kỹ thuật lập trình rất quan trọng và sử dụng nhiều hiện nay. 
+Hầu hết các ngôn ngữ lập trình hiện 
++ Lập trình hướng đối tượng (OOP) là một kỹ thuật lập trình cho phép lập trình viên tạo ra các đối tượng trong code trừu tượng hóa các đối tượng
+mỗi đối tượng bao gồm các thuộc tính ( chính là những thông tin, đặc điểm của đối tượng. 
+Ví dụ: con người có các đặc tính như mắt, mũi, tay, chân…) và phương thức (là những thao tác, hành động mà đối tượng đó có thể thực hiện. 
+Ví dụ: một người sẽ có thể thực hiện hành động nói, đi, ăn, uống, . . .). 
++ OOP có 4 tính chất sau: Đa hình, trừu tượng, đóng gói, kế thừa.
+
+
+
+- WHY: tại sao lại nên sử dụng OOP? 
+Các ưu điểm của OOP
++ Tối ưu việc quản lý source code,
++ Dễ mở rộng dự án.
++ Dễ sửa lỗi
++ Có tính bảo mật cao
++ Có thể tái sử dụng
+
+
+
+- WHO: những ai nên sử dụng OOP?
+Bất kì lập trình viên nào cũng nên nắm vững kiến thức cơ bản về OOP, và sử dụng OOP
+
+
+
+- WHEN: Khi nào sử dụng đến OOP?
+Khi xây dựng 1 project có quy mô lớn và có nhiều đối tượng, giữa các đối tượng lại có các điểm chung
+
+
+
+- WHERE: OOP được sử dụng phổ biến trong những ngôn ngữ nào?
++ OOP được tích hợp sử dụng trong những ngôn ngữ như: Java, C++, PHP, Python...  
+
+
+
+- HOW: OOP giải quyết bài toán như thế nào?
+Xác định các đối tượng trong bài toán,xác định các thuộc tính của đối tượng, xác định quan hệ giữa các đối tượng 
+

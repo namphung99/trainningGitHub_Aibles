@@ -1,0 +1,32 @@
+Tổng hợp lại kiến thức lý thuyết database buổi hôm thứ 4.
+
+- Cơ sở dữ liệu tập hợp dữ liệu được lưu trữ dưới dạng văn bản, âm thanh, hình ảnh để máy tính có thể đọc, hiểu được
+và được tổ chức theo 1 cấu trúc nhất định
+
+- Cơ sở dữ liệu thể hiện qua 3 mức: mức khung hình,mức logic,mức vật lí
+-Lợi ích của csdl:
+	1. Lưu dữ liệu
+	2. Đảm bảo an toàn dữ liệu
+	3.Phục vụ nhiều người cùng truy cập 1 thời điểm
+	4. quản lý dữ liệu,tránh trùng lặp dữ liệu
+	5. Lưu dữ liệu thành các bảng -> xem dữ liệu dễ dàng
+	6. Tách biệt giữa các chương trình
+	7. Có thuộc tính ACID 
+
+- ACID
++ Về Transaction (giao dịch):
+	• Atomicity (tính nguyên tử): trong 1 giao dịch có nhiều thao tác như đọc và ghi. Tính chất này đảm bảo hoặc là cả 2 thao tác được thực hiện 
+    hoặc ko có gì cả.
+	• Consistency: tất cả các rang buộc toàn vẹn dữ liệu phải được thực thi
+	• Isolation: giữ giao dịch tách rời nhau cho đến khi chúng hoàn tất, đảm bảo các giao dịch ko bị trộn lẫn
+	• Durablility: đảm bảo 1 giao dịch thành công thì tất cả những thay đổi trong giao dịch phải được đồng bộ xuống database 
+    kể cả khi hệ thống lỗi.
+- Có 3 loại liên kết trong csdl: 1-1, 1-n ,n-n
+- Các khái niệm trong csdl:
+	+ Bảng: mỗi thực thể là một bảng
+	+ Bản ghi: mỗi bản ghi gồm nhiều bảng
+	+ Khóa chính:phân biệt giữa 2 thực thể
+    + khóa ngoại: thường là khóa chính của 1 bảng khác, dùng để liên kết giữa các thực thể
+	+ Thuộc tính: mô tả thông tin của thực thể 
+    + thuộc tính dẫn xuất: có thể tính dựa trên các thuộc tính khác (vd:tuổi)
+	+ Query: truy vấn thao các với csdl
